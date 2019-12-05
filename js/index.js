@@ -58,12 +58,10 @@ nav[5].textContent = siteContent["nav"]["nav-item-6"];
 // section .cta
 // h1
 const linebreak = document.createElement("br");
-const headBreak = siteContent["cta"]["h1"].split();
-
-console.log(headBreak);
 
 const headline = document.querySelector(".cta-text h1");
-headline.innerHTML = "DOM \n Is \n Awesome";
+// headline.textContent = siteContent["cta"]["h1"];
+headline.innerHTML = siteContent["cta"]["h1"].split(" ").join("<br>");
 
 // button
 const button = document.querySelector(".cta-text button");
